@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* main print the pharse programming is like builidn a multilingual puzzle
-* Returns 0
+* main -  prints the pharse "programming is like builiding a multilingual puzzle
+* Return: 0 if exired properly, no-zero otherwise
 */
 int main(void)
 {
