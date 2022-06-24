@@ -6,8 +6,8 @@
  * Return: absolute value
  */
 
-int _puts(char *s)
+void _puts(char *s)
 {
 
-	return (0);
+	
 }

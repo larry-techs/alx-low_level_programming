@@ -1,14 +1,25 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabet character
- * @c: character to check
- * Return: 1 if lower or uppercase, 0 if not alphabet character
+ * _memcpy - copy n bytes of memory from source to destination
+ * @dest: destination
+ * @src: source
+ * @n: number of bytes
+ * Return: pointer to dest
  */
 
-char *_memcpy(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 
-    return (s);
-	
+	int size = n; /* only accept positive sizes */
+
+	if (size > 0)
+	{
+		int i;
+
+		for (i = 0; i < size; i++)
+			dest[i] = src[i];
+	}
+
+	return (dest);
 }

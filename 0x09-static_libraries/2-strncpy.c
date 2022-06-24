@@ -1,14 +1,27 @@
 #include "main.h"
-
 /**
- * _isalpha - checks for alphabet character
- * @c: character to check
- * Return: 1 if lower or uppercase, 0 if not alphabet character
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
-
-char *_strncpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
+	int j;
 
-    return (dest);
-	
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
+	return (dest);
 }

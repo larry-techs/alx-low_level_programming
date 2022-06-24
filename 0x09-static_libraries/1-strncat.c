@@ -1,14 +1,30 @@
 #include "main.h"
-
 /**
- * _isalpha - checks for alphabet character
- * @c: character to check
- * Return: 1 if lower or uppercase, 0 if not alphabet character
+ * _strncat - concatenate two strings
+ * using at most n bytes from src
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
-
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
+	int i;
+	int j;
 
-    return (dest);
-	
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
