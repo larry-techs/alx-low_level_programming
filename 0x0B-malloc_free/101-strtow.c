@@ -11,7 +11,7 @@ int wordCounterRec(char *str, int i)
 	if (str[i] == '\0')
 		return (0);
 	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
-		return (1 + wordCounterRec(str, i + 1));
+		return (wordCounterRec(str, i + 1));
 	return (wordCounterRec(str, i + 1));
 }
 /**
